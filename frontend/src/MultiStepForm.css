@@ -1,0 +1,113 @@
+/* MultiStepForm.css */
+
+.multi-step-form-container {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    direction: rtl; /* Set direction to RTL */
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.line {
+    height: 2px;
+    flex-grow: 1;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.line.completed {
+    background-color: #007bff;
+}
+
+.form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.prev-btn {
+    margin-right: auto; /* Adjust margin for RTL */
+}
+
+button.next-btn, button.submit-btn {
+    margin-left: auto; /* Adjust margin for RTL */
+}
+
+button.prev-btn, button.next-btn {
+    transition: background-color 0.3s ease;
+}
+
+button.prev-btn:hover, button.next-btn:hover, button.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.input-field, .select-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.select-field {
+    background-color: white;
+}
+
+
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-option {
+    display: block;
+    margin: 5px 0;
+}
+
+.radio-option input {
+    margin-right: 10px;
+}
